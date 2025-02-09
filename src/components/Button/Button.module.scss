@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.91;
+  }
+
+  &:active {
+    .shadow {
+      top: 33px;
+    }
+  }
+}
+
+.green {
+  .pixelButton {
+    background-color: #7fc951;
+  }
+
+  .bottom {
+    background-color: #408118;
+  }
+}
+
+.red {
+  .pixelButton {
+    background-color: #cc3c3c;
+  }
+
+  .bottom {
+    background-color: #811818;
+  }
+}
+
+.pixelButton {
+  z-index: 3;
+  cursor: pointer;
+  position: inherit;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 5px;
+  font-family: "YourFontName";
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px 25px;
+  transition: all 0.1s ease-in-out;
+
+  &:active {
+    top: 3px;
+  }
+}
+
+.bottom {
+  z-index: 2;
+  width: 100%;
+  top: 28px;
+  position: absolute;
+  height: 15px;
+  border: 1px solid rgb(73, 73, 73);
+  background: #bdb0ab;
+  border-radius: 5px;
+}
+
+.shadow {
+  z-index: 1;
+  width: 100%;
+  top: 34px;
+  position: absolute;
+  height: 15px;
+  background-color: #d3d3d3;
+  transition: all 0.1s ease-in-out;
+  border-radius: 5px;
+}
